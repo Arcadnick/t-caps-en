@@ -27,6 +27,8 @@ Route::get('/book-demo', [PageController::class, 'bookdemo'])->name('book-demo')
 // Логин
 Route::get('/login', [PageController::class, 'login'])->name('login');
 
+Route::get('/user-agreement', [PageController::class, 'useragreement'])->name('user-agreement');
+
 Route::get('/privacy-policy', function () {
     $page = Page::where('slug', 'privacy-policy')->firstOrFail();
     return view('privacy-policy', ['content' => $page->content]);
@@ -37,10 +39,10 @@ Route::get('/cookies', function () {
     return view('cookies', ['content' => $page->content]);
 })->name('cookies');
 
-Route::get('/user-agreement', function () {
-    $page = Page::where('slug', 'terms-and-conditions')->firstOrFail();
-    return view('user-agreement', ['content' => $page->content]);
-})->name('user-agreement');
+//Route::get('/user-agreement', function () {
+//    $page = Page::where('slug', 'terms-and-conditions')->firstOrFail();
+//    return view('user-agreement', ['content' => $page->content]);
+//})->name('user-agreement');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

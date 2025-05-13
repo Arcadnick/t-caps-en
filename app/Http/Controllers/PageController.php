@@ -36,6 +36,10 @@ class PageController extends Controller
     {
         return view('auto-response');
     }
+    public function useragreement()
+    {
+        return view('user-agreement');
+    }
 
     public function aicapsules()
     {

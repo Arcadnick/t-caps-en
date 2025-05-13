@@ -672,7 +672,7 @@
                     <div class="heading-footer">Navigation</div>
                     <a href="#" class="footer-link">AI-capsules</a>
                     <a href="#" class="footer-link">How it works</a>
-                    <a href="#" class="footer-link">Developers</a>
+                    <a href="{{ route('partners') }}" class="footer-link">Developers</a>
                 </div>
                 <div class="footer-link-block">
                     <div class="heading-footer">Contacts</div>

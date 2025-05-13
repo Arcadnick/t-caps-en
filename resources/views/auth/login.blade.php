@@ -71,25 +71,6 @@
                 </div>
             </div>
             <div class="form-login-wrapper w-form">
-{{--                <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form-block" data-wf-page-id="67effaf7b7f4ff8926a2a3b1" data-wf-element-id="a2ab6eb9-5264-82c6-6692-e8862d162daa">--}}
-{{--                    <div class="rows-form-block">--}}
-{{--                        <div class="flex-vertical gap-6"><label for="Email-login" class="input-text">Email</label><input class="text-field w-input" maxlength="256" name="Email-login" data-name="Email-login" placeholder="Enter your e-mail" type="email" id="Email-login" required=""></div>--}}
-{{--                        <div class="flex-vertical gap-6"><label for="password" class="input-text">Password</label><input class="text-field w-input" maxlength="256" name="password" data-name="password" placeholder="••••••••" type="password" id="password" required=""></div>--}}
-{{--                        <div class="small-text gray-color center-aling">--}}
-{{--                            <a href="#" class="forget-password-link">Forgot your password?</a>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="action-block"><input type="submit" data-wait="Please wait..." class="form-button w-button" value="Log in">--}}
-{{--                        <div class="small-text gray-color center-aling">Read the <a href="{{ route('privacy-policy') }}" class="small-link">Privacy Policy</a> and <a href="{{ route('user-agreement') }}" class="small-link">Terms of Service</a>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </form>--}}
-{{--                <div class="w-form-done">--}}
-{{--                    <div>Thank you! Your submission has been received!</div>--}}
-{{--                </div>--}}
-{{--                <div class="w-form-fail">--}}
-{{--                    <div>Oops! Something went wrong while submitting the form.</div>--}}
-{{--                </div>--}}
                 <form method="POST" action="{{ route('login') }}" class="form-block">
                     @csrf
 
@@ -131,37 +112,37 @@
         </div>
     </div>
 </section>
-<section class="footer-section">
+<section class="footer-white">
     <div class="container footer">
         <div class="w-layout-grid footer-grid">
-            <div id="w-node-_1f0a659d-6d2e-bea8-4ca6-e4a4b756eab4-b756eab1" class="footer-logo-block">
-                <div class="heading mirage-f">дщпщ</div>
-                <a href="#" class="footer-logo-link w-inline-block"><img src="{{ asset('images/logo-capsules-ai-white.svg') }}" loading="lazy" alt="" class="logo-footer"></a>
+            <div id="w-node-_23367ff5-f907-0a59-0b8e-135fe55d3eeb-e55d3ee8" class="footer-logo-block">
+                <a href="{{ route('welcome') }}" aria-current="page" class="footer-logo-link w-inline-block w--current"><img loading="lazy" src="{{ asset('images/logo_1.svg') }}" alt="" class="logo-footer"></a>
+                <div class="title-text">Ultimate AI Agents for boosting<br>business workflows</div>
             </div>
             <div class="footer-link-block">
-                <div class="heading-footer">Navigation</div>
-                <a href="#" class="footer-link">AI-capsules</a>
-                <a href="#" class="footer-link">How it works</a>
-                <a href="#" class="footer-link">Developers</a>
-            </div>
-            <div class="footer-link-block">
-                <div class="heading-footer">Contacts</div>
-                <a href="mailto:support@ruyou.ru" class="footer-link">support@ruyou.ru</a>
-                <div class="footer-text">ИНН: 6658420044</div>
-                <a href="#" class="social-block w-inline-block"><img src="{{ asset('images/whatsapp_social.svg') }}" loading="lazy" alt="" class="social-png"></a>
-            </div>
-            <div id="w-node-_1f0a659d-6d2e-bea8-4ca6-e4a4b756ead3-b756eab1" class="footer-link-block">
-                <div class="wrapper-btn capsules-bl">
-                    <a href="#" class="button-base footer w-button">Book a consultation</a>
-                    <a href="#" class="button-base footer w-button">Log in</a>
+                <div class="heading-footer">Company</div>
+                <div class="flex-vertical gap-12">
+                    <a href="{{ route('ai-capsules') }}" class="footer-link">AI Capsules</a>
+                    <a href="{{ route('request-capsule') }}" class="footer-link">Request AI Capsules</a>
+                    <a href="{{ route('partners') }}" class="footer-link">Developers</a>
+                </div>
+                <div class="flex-vertical gap-12 margin-top">
+                    <a href="{{ route('privacy-policy') }}" target="_blank" class="footer-link">Privacy Policy</a>
+                    <a href="{{ route('user-agreement') }}" target="_blank" class="footer-link">User agreement</a>
+                    <a href="{{ route('cookies') }}" target="_blank" class="footer-link">Cookies</a>
                 </div>
             </div>
-        </div>
-        <div class="bottom-footer-block">
-            <div class="small-text-footer">© 2024 ООО &quot;РУ-Ю&quot;</div>
-            <div class="legal-link-bl">
-                <a href="#" class="legal-link">Privacy Policy</a>
-                <a href="#" class="legal-link">Terms of Service</a>
+            <div class="footer-link-block">
+                <div class="heading-footer">Contact</div>
+                <a href="mailto:hello@getcapsules.ai" class="footer-link email">hello@getcapsules.ai</a>
+                <div class="wrapper-button gap-16 margin-top flex-vert">
+                    <a href="{{ route('book-demo') }}" class="button-black w-inline-block">
+                        <div>Book a demo</div>
+                    </a>
+                    <a href="{{ route('login') }}" class="button-login w-inline-block">
+                        <div>Log in</div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

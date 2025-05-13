@@ -56,7 +56,7 @@
                 <div class="flex-vertical gap-12">
                     <a href="{{ route('ai-capsules') }}" class="footer-link">AI Capsules</a>
                     <a href="{{ route('request-capsule') }}" class="footer-link">Request AI Capsules</a>
-                    <a href="#" class="footer-link">Developers</a>
+                    <a href="{{ route('partners') }}" class="footer-link">Developers</a>
                 </div>
                 <div class="flex-vertical gap-12 margin-top">
                     <a href="{{ route('privacy-policy') }}" target="_blank" class="footer-link">Privacy Policy</a>

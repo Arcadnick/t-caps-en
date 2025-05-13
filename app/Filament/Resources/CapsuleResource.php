@@ -92,6 +92,7 @@ class CapsuleResource extends Resource
                         TextInput::make('landing_url')
                             ->label('The link to the capsule\'s landing page')
                             ->nullable()
+                            ->required()
                             ->visible(fn (callable $get) => !$get('use_default_page')),
 
                         TextInput::make('default_price')

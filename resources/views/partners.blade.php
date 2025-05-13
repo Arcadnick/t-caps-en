@@ -115,7 +115,7 @@
                 </div>
             </div>
             <div data-w-id="780b7d4d-e9d2-97a5-29c8-7ecd785ddb89" style="opacity:0" class="wrapper-btn">
-                <a href="#" class="button-black w-inline-block">
+                <a href="{{ route('ai-capsules') }}" class="button-black w-inline-block">
                     <div>All AI capsules</div>
                 </a>
             </div>
@@ -161,7 +161,7 @@
                 </div>
             </div>
             <div data-w-id="263344ba-d287-a0db-15e8-93f5c1ad481a" style="opacity:0" class="wrapper-btn">
-                <a href="#" class="button-black w-inline-block">
+                <a href="{{ route('book-demo') }}" class="button-black w-inline-block">
                     <div>Apply for development</div>
                 </a>
             </div>
@@ -233,7 +233,7 @@
                 </div>
             </div>
             <div data-w-id="5231aef4-b560-be81-52cb-e5752cf44460" style="opacity:0" class="wrapper-btn">
-                <a href="#" class="button-black w-inline-block">
+                <a href="{{ route('ai-capsules') }}" class="button-black w-inline-block">
                     <div>Select an AI Capsule for development</div>
                 </a>
             </div>
@@ -250,7 +250,7 @@
                     <div class="heading-footer">Navigation</div>
                     <a href="#" class="footer-link">AI-capsules</a>
                     <a href="#" class="footer-link">How it works</a>
-                    <a href="#" class="footer-link">Developers</a>
+                    <a href="{{ route('partners') }}" class="footer-link">Developers</a>
                 </div>
                 <div class="footer-link-block">
                     <div class="heading-footer">Contacts</div>

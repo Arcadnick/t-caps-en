@@ -98,7 +98,7 @@ class CapsuleResource extends Resource
                             ->label('Default price (sample page)')
                             ->numeric()
                             ->inputMode('decimal')
-                            ->suffix('₽')
+                            ->suffix('€')
                             ->nullable()
                             ->visible(fn (callable $get) => $get('use_default_page')),
 

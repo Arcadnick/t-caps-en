@@ -21,12 +21,6 @@ class PageController extends Controller
         ]);
     }
 
-    // Главная страница
-//    public function index()
-//    {
-//        return view('welcome');
-//    }
-
     public function capsules()
     {
         return view('capsules-page');
@@ -35,10 +29,6 @@ class PageController extends Controller
     public function autoResponse()
     {
         return view('auto-response');
-    }
-    public function useragreement()
-    {
-        return view('user-agreement');
     }
 
     public function aicapsules()
@@ -56,19 +46,9 @@ class PageController extends Controller
         return view('book-demo');
     }
 
-    public function cookies()
-    {
-        return view('cookies');
-    }
-
     public function partners()
     {
         return view('partners');
-    }
-
-    public function consultation()
-    {
-        return view('consultation');
     }
 
     public function login()
@@ -76,7 +56,35 @@ class PageController extends Controller
         return view('login');
     }
 
-    public function developedCapsulePage(){
+    public function developedCapsulePage()
+    {
         return view('developed-capsule-page');
+    }
+
+    public function useragreement()
+    {
+        $page = Page::where('slug', 'user-agreement')->firstOrFail();
+
+        return view('user-agreement', [
+            'content' => $page->content
+        ]);
+    }
+
+    public function cookies()
+    {
+        $page = Page::where('slug', 'cookies')->firstOrFail();
+
+        return view('cookies', [
+            'content' => $page->content
+        ]);
+    }
+
+    public function privacypolicy()
+    {
+        $page = Page::where('slug', 'privacy-policy')->firstOrFail();
+
+        return view('privacy-policy', [
+            'content' => $page->content
+        ]);
     }
 }

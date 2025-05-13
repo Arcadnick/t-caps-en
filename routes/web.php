@@ -24,25 +24,19 @@ Route::post('/requests', [RequestController::class, 'store'])->name('requests.st
 
 Route::get('/book-demo', [PageController::class, 'bookdemo'])->name('book-demo');
 
-// Логин
 Route::get('/login', [PageController::class, 'login'])->name('login');
 
 Route::get('/user-agreement', [PageController::class, 'useragreement'])->name('user-agreement');
 
-Route::get('/privacy-policy', function () {
-    $page = Page::where('slug', 'privacy-policy')->firstOrFail();
-    return view('privacy-policy', ['content' => $page->content]);
-})->name('privacy-policy');
+Route::get('/cookies', [PageController::class, 'cookies'])->name('cookies');
 
-Route::get('/cookies', function () {
-    $page = Page::where('slug', 'cookies')->firstOrFail();
-    return view('cookies', ['content' => $page->content]);
-})->name('cookies');
+Route::get('/privacy-policy', [PageController::class, 'privacypolicy'])->name('privacy-policy');
 
-//Route::get('/user-agreement', function () {
-//    $page = Page::where('slug', 'terms-and-conditions')->firstOrFail();
-//    return view('user-agreement', ['content' => $page->content]);
-//})->name('user-agreement');
+Route::get('/capsules-page', [CapsuleController::class, 'index'])->name('capsules');
+
+Route::get('/auto-response/{slug}', [CapsuleController::class, 'showDefault'])->name('capsule.default');
+
+Route::get('/developed-capsule-page', [PageController::class, 'developedCapsulePage'])->name('developed-capsule-page');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -54,13 +48,5 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     //Route::get('/admin', [AdminController::class, 'index']);
 });
-
-Route::get('/capsules-page', [CapsuleController::class, 'index'])->name('capsules');
-
-Route::get('/auto-response/{slug}', [CapsuleController::class, 'showDefault'])->name('capsule.default');
-
-//Route::get('/develop-generated-capsule', [PageController::class, 'developGeneratedCapsule'])->name('develop-generated-capsule');
-
-Route::get('/developed-capsule-page', [PageController::class, 'developedCapsulePage'])->name('developed-capsule-page');
 
 require __DIR__.'/auth.php';

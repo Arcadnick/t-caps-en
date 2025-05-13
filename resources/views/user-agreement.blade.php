@@ -41,7 +41,7 @@
 </section>
 <section id="scroll-section" class="section no-top-padding">
     <div class="container">
-{{--        {!! $content !!}--}}
+        {!! $content !!}
     </div>
 </section>
 <section class="footer-white">

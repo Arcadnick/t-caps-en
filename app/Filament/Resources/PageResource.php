@@ -53,7 +53,7 @@ class PageResource extends Resource
                     ->rows(150)
                     ->columnSpanFull()
                     ->required()
-                    ->visible(fn ($record) => $record && in_array($record->slug, ['privacy-policy', 'terms-and-conditions','cookies'])),
+                    ->visible(fn ($record) => $record && in_array($record->slug, ['privacy-policy', 'user-agreement','cookies'])),
 
                 Select::make('capsule_ids')
                     ->label('Капсулы для главной страницы')

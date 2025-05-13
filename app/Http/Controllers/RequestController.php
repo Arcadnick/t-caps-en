@@ -36,7 +36,7 @@ class RequestController extends Controller
             'phone' => $phone,
             'message' => $message,
             'request_type' => $request_type,
-            'status' => 'новая',
+            'status' => 'new',
             'consultation_date' => $parsedDate,
             'consultation_time' => $time,
         ]);
@@ -45,7 +45,7 @@ class RequestController extends Controller
             $token = env('TELEGRAM_BOT_TOKEN');
             $chatId = env('TELEGRAM_CHAT_ID');
 
-            $text = "📩 Новая заявка ({$request_type}):\n\n"
+            $text = "📩 Новая заявка с getcapsules.ai ({$request_type}):\n\n"
                 . "👤 Имя: {$userName}\n"
                 . "📞 Телефон: {$phone}\n"
                 . "📅 Дата: {$date}\n"

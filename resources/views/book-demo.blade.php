@@ -106,7 +106,7 @@
                         <form method="POST" action="{{ route('requests.store') }}" name="email-form" data-name="Email Form" class="form-contact"
                               data-wf-page-id="67effaf7b7f4ff8926a2a3b2" data-wf-element-id="2243e8b9-4ee8-3daa-e809-119951457412">
                             @csrf
-                            <input type="hidden" name="request_type" value="консультация">
+                            <input type="hidden" name="request_type" value="consultation">
 
                             <input class="text-field hover-second w-input" maxlength="256" name="user_name" data-name="Name 2"
                                    placeholder="Name*" type="text" id="name-2" required="">

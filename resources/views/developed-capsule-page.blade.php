@@ -589,7 +589,7 @@
                         </div>
                     </div>
                     <div class="wrapper-btn margin-auto">
-                        <a href="#" class="button-black max-width w-inline-block">
+                        <a href="{{ route('book-demo') }}" class="button-black max-width w-inline-block">
                             <div class="icon-btn w-embed"><svg width="27" height="26" viewbox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M8.34783 2.0066C8.65601 1.10415 9.93234 1.10415 10.2405 2.0066L11.5688 5.89635C11.6689 6.18935 11.899 6.41948 12.192 6.51953L16.0818 7.84783C16.9842 8.15601 16.9842 9.43234 16.0818 9.74052L12.192 11.0688C11.899 11.1689 11.6689 11.399 11.5688 11.692L10.2405 15.5818C9.93234 16.4842 8.65601 16.4842 8.34783 15.5818L7.01953 11.692C6.91948 11.399 6.68935 11.1689 6.39635 11.0688L2.5066 9.74052C1.60415 9.43234 1.60415 8.15601 2.5066 7.84783L6.39635 6.51953C6.68935 6.41948 6.91948 6.18935 7.01953 5.89635L8.34783 2.0066Z" fill="white"></path>
                                     <path d="M19.429 12.1887C19.7236 11.2577 21.0411 11.2577 21.3357 12.1887L21.8803 13.9093C21.9785 14.2196 22.2216 14.4627 22.5319 14.5609L24.2525 15.1055C25.1835 15.4001 25.1835 16.7176 24.2525 17.0123L22.5319 17.5568C22.2216 17.6551 21.9785 17.8981 21.8803 18.2085L21.3357 19.929C21.0411 20.86 19.7236 20.86 19.429 19.929L18.8844 18.2085C18.7862 17.8981 18.5431 17.6551 18.2328 17.5568L16.5122 17.0123C15.5812 16.7176 15.5812 15.4002 16.5122 15.1055L18.2328 14.5609C18.5431 14.4627 18.7862 14.2196 18.8844 13.9093L19.429 12.1887Z" fill="white"></path>
@@ -648,7 +648,7 @@
                         </div>
                     </div>
                     <div class="wrapper-btn margin-auto">
-                        <a href="#" class="button-black max-width w-inline-block">
+                        <a href="{{ route('book-demo') }}" class="button-black max-width w-inline-block">
                             <div class="icon-btn w-embed"><svg width="27" height="26" viewbox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M8.34783 2.0066C8.65601 1.10415 9.93234 1.10415 10.2405 2.0066L11.5688 5.89635C11.6689 6.18935 11.899 6.41948 12.192 6.51953L16.0818 7.84783C16.9842 8.15601 16.9842 9.43234 16.0818 9.74052L12.192 11.0688C11.899 11.1689 11.6689 11.399 11.5688 11.692L10.2405 15.5818C9.93234 16.4842 8.65601 16.4842 8.34783 15.5818L7.01953 11.692C6.91948 11.399 6.68935 11.1689 6.39635 11.0688L2.5066 9.74052C1.60415 9.43234 1.60415 8.15601 2.5066 7.84783L6.39635 6.51953C6.68935 6.41948 6.91948 6.18935 7.01953 5.89635L8.34783 2.0066Z" fill="white"></path>
                                     <path d="M19.429 12.1887C19.7236 11.2577 21.0411 11.2577 21.3357 12.1887L21.8803 13.9093C21.9785 14.2196 22.2216 14.4627 22.5319 14.5609L24.2525 15.1055C25.1835 15.4001 25.1835 16.7176 24.2525 17.0123L22.5319 17.5568C22.2216 17.6551 21.9785 17.8981 21.8803 18.2085L21.3357 19.929C21.0411 20.86 19.7236 20.86 19.429 19.929L18.8844 18.2085C18.7862 17.8981 18.5431 17.6551 18.2328 17.5568L16.5122 17.0123C15.5812 16.7176 15.5812 15.4002 16.5122 15.1055L18.2328 14.5609C18.5431 14.4627 18.7862 14.2196 18.8844 13.9093L19.429 12.1887Z" fill="white"></path>
@@ -661,37 +661,37 @@
             </div>
         </div>
     </section>
-    <section class="footer-section">
+    <section class="footer-white">
         <div class="container footer">
             <div class="w-layout-grid footer-grid">
-                <div id="w-node-_1f0a659d-6d2e-bea8-4ca6-e4a4b756eab4-b756eab1" class="footer-logo-block">
-                    <div class="heading mirage-f">дщпщ</div>
-                    <a href="#" class="footer-logo-link w-inline-block"><img src="{{ asset('images/logo-capsules-ai-white.svg') }}" loading="lazy" alt="" class="logo-footer"></a>
+                <div id="w-node-_23367ff5-f907-0a59-0b8e-135fe55d3eeb-e55d3ee8" class="footer-logo-block">
+                    <a href="{{ route('welcome') }}" aria-current="page" class="footer-logo-link w-inline-block w--current"><img loading="lazy" src="{{ asset('images/logo_1.svg') }}" alt="" class="logo-footer"></a>
+                    <div class="title-text">Ultimate AI Agents for boosting<br>business workflows</div>
                 </div>
                 <div class="footer-link-block">
-                    <div class="heading-footer">Navigation</div>
-                    <a href="#" class="footer-link">AI-capsules</a>
-                    <a href="#" class="footer-link">How it works</a>
-                    <a href="{{ route('partners') }}" class="footer-link">Developers</a>
-                </div>
-                <div class="footer-link-block">
-                    <div class="heading-footer">Contacts</div>
-                    <a href="mailto:support@ruyou.ru" class="footer-link">support@ruyou.ru</a>
-                    <div class="footer-text">ИНН: 6658420044</div>
-                    <a href="#" class="social-block w-inline-block"><img src="{{ asset('images/whatsapp_social.svg') }}" loading="lazy" alt="" class="social-png"></a>
-                </div>
-                <div id="w-node-_1f0a659d-6d2e-bea8-4ca6-e4a4b756ead3-b756eab1" class="footer-link-block">
-                    <div class="wrapper-btn capsules-bl">
-                        <a href="#" class="button-base footer w-button">Book a consultation</a>
-                        <a href="#" class="button-base footer w-button">Log in</a>
+                    <div class="heading-footer">Company</div>
+                    <div class="flex-vertical gap-12">
+                        <a href="{{ route('ai-capsules') }}" class="footer-link">AI Capsules</a>
+                        <a href="{{ route('request-capsule') }}" class="footer-link">Request AI Capsules</a>
+                        <a href="{{ route('partners') }}" class="footer-link">Developers</a>
+                    </div>
+                    <div class="flex-vertical gap-12 margin-top">
+                        <a href="{{ route('privacy-policy') }}" target="_blank" class="footer-link">Privacy Policy</a>
+                        <a href="{{ route('user-agreement') }}" target="_blank" class="footer-link">User agreement</a>
+                        <a href="{{ route('cookies') }}" target="_blank" class="footer-link">Cookies</a>
                     </div>
                 </div>
-            </div>
-            <div class="bottom-footer-block">
-                <div class="small-text-footer">© 2024 ООО &quot;РУ-Ю&quot;</div>
-                <div class="legal-link-bl">
-                    <a href="#" class="legal-link">Privacy Policy</a>
-                    <a href="#" class="legal-link">Terms of Service</a>
+                <div class="footer-link-block">
+                    <div class="heading-footer">Contact</div>
+                    <a href="mailto:hello@getcapsules.ai" class="footer-link email">hello@getcapsules.ai</a>
+                    <div class="wrapper-button gap-16 margin-top flex-vert">
+                        <a href="{{ route('book-demo') }}" class="button-black w-inline-block">
+                            <div>Book a demo</div>
+                        </a>
+                        <a href="{{ route('login') }}" class="button-login w-inline-block">
+                            <div>Log in</div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

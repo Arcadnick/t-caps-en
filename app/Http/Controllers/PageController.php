@@ -56,11 +56,6 @@ class PageController extends Controller
         return view('login');
     }
 
-    public function developedCapsulePage()
-    {
-        return view('developed-capsule-page');
-    }
-
     public function useragreement()
     {
         $page = Page::where('slug', 'user-agreement')->firstOrFail();

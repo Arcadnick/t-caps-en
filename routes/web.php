@@ -36,7 +36,9 @@ Route::get('/capsules-page', [CapsuleController::class, 'index'])->name('capsule
 
 Route::get('/auto-response/{slug}', [CapsuleController::class, 'showDefault'])->name('capsule.default');
 
-Route::get('/developed-capsule-page', [PageController::class, 'developedCapsulePage'])->name('developed-capsule-page');
+Route::get('/redirect-to-developed/{id}', [RedirectDevelopedCapsuleController::class, 'handle'])->name('redirect-developed');
+
+Route::get('/developed-capsule-page', [RedirectDevelopedCapsuleController::class, 'developedCapsulePage'])->name('developed-capsule-page');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

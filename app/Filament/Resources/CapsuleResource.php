@@ -31,84 +31,84 @@ class CapsuleResource extends Resource
     {
         return $form
             ->schema([
-                TextInput::make('title')->required()->label('Название'),
+                TextInput::make('title')->required()->label('Name'),
 
                 TextInput::make('slug')->required()->label('Slug'),
 
                 Select::make('category_id')
                     ->relationship('category', 'name')
                     ->required()
-                    ->label('Категория'),
+                    ->label('Category'),
 
                 Select::make('type')
                     ->options([
-                        'готовая' => 'Готовая',
-                        'в планах' => 'В планах',
-                        'сгенерированная' => 'Сгенерированная',
+                        'ready' => 'ready',
+                        'in plans' => 'in plans',
+//                        'generated' => 'generated',
                     ])
                     ->required()
-                    ->label('Тип'),
+                    ->label('Type'),
 
                 RichEditor::make('content')
                     ->required()
-                    ->label('Описание')
+                    ->label('Description')
                     ->toolbarButtons(['undo', 'redo']),
 
-                Toggle::make('is_blocked')->label('Запрещена к показу'),
+                Toggle::make('is_blocked')->label('Banned'),
 
                 TextInput::make('image')
-                    ->label('Название изображения без расширения')
-                    ->helperText('Изображения должны быть загружены с одинаковым названием для landing \'.jpg\', для страницы capsules \'.png\'')
+                    ->label('Image name without extension')
+                    ->helperText('The images must be uploaded with the same name for landing \'.jpg\', for the capsules page \'.png\'')
                     ->nullable()
                     ->required(),
 
                 TextInput::make('priority')
                     ->numeric()
                     ->default(0)
-                    ->label('Приоритет')
-                    ->helperText('Чем больше число тем ниже капсула (если число одинаковое, то капсулы будут показываться друг за другом)')
+                    ->label('Priority')
+                    ->helperText('The higher the number, the lower the capsule (if the number is the same, the capsules will be displayed one after the other)')
                     ->required(),
 
-                Fieldset::make('Что автоматизирует')
+                Fieldset::make('What automates?')
                     ->schema([
-                        TextInput::make('automates.0')->label('Автоматизация #1'),
-                        TextInput::make('automates.1')->label('Автоматизация #2'),
-                        TextInput::make('automates.2')->label('Автоматизация #3'),
+                        TextInput::make('automates.0')->label('Automates #1'),
+                        TextInput::make('automates.1')->label('Automates #2'),
+                        TextInput::make('automates.2')->label('Automates #3'),
                     ]),
 
-                Fieldset::make('Ожидаемый результат')
+                Fieldset::make('Expected effect:')
                     ->schema([
-                        TextInput::make('expected.0')->label('Результат #1'),
-                        TextInput::make('expected.1')->label('Результат #2'),
-                        TextInput::make('expected.2')->label('Результат #3'),
+                        TextInput::make('expected.0')->label('Expected #1'),
+                        TextInput::make('expected.1')->label('Expected #2'),
+                        TextInput::make('expected.2')->label('Expected #3'),
                     ]),
 
-                Fieldset::make('Настройки страницы и стоимости')
+                Fieldset::make('Page and Cost Settings')
                     ->schema([
                         Toggle::make('use_default_page')
-                            ->label('Использовать типовую страницу')
+                            ->label('Use a sample page')
                             ->reactive(),
 
                         TextInput::make('landing_url')
-                            ->label('Ссылка на лендинг капсулы')
+                            ->label('The link to the capsule\'s landing page')
                             ->nullable()
                             ->visible(fn (callable $get) => !$get('use_default_page')),
 
                         TextInput::make('default_price')
-                            ->label('Цена по умолчанию (типовая страница)')
+                            ->label('Default price (sample page)')
                             ->numeric()
                             ->inputMode('decimal')
                             ->suffix('₽')
                             ->nullable()
                             ->visible(fn (callable $get) => $get('use_default_page')),
 
-                        Fieldset::make('Интеграции по умолчанию')
-                            ->schema([
-                                Textarea::make('default_integrations.0')->label('Интеграция #1'),
-                                Textarea::make('default_integrations.1')->label('Интеграция #2'),
-                                Textarea::make('default_integrations.2')->label('Интеграция #3'),
-                            ])
-                            ->visible(fn (callable $get) => $get('use_default_page')),
+//                        Fieldset::make('Интеграции по умолчанию')
+//                            ->schema([
+//                                Textarea::make('default_integrations.0')->label('Интеграция #1'),
+//                                Textarea::make('default_integrations.1')->label('Интеграция #2'),
+//                                Textarea::make('default_integrations.2')->label('Интеграция #3'),
+//                            ])
+//                            ->visible(fn (callable $get) => $get('use_default_page')),
                     ]),
             ]);
     }
@@ -117,21 +117,21 @@ class CapsuleResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('title')->label('Название')->sortable(),
-                TextColumn::make('category.name')->label('Категория'),
-                TextColumn::make('type')->label('Тип'),
-                IconColumn::make('is_blocked')->label('Запрещена к показу')->boolean(),
+                TextColumn::make('title')->label('Name')->sortable(),
+                TextColumn::make('category.name')->label('Category'),
+                TextColumn::make('type')->label('Type'),
+                IconColumn::make('is_blocked')->label('Banned')->boolean(),
             ])
             ->filters([
                 SelectFilter::make('category_id')
-                    ->label('Категория')
+                    ->label('Category')
                     ->relationship('category', 'name'),
 
                 SelectFilter::make('type')
-                    ->label('Тип')
+                    ->label('Type')
                     ->options([
-                        'готовая' => 'Готовая',
-                        'в планах' => 'В планах',
+                        'ready' => 'ready',
+                        'in plans' => 'in plans',
                     ]),
             ])
             ->actions([

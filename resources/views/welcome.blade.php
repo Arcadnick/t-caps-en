@@ -614,7 +614,7 @@
                     <div class="subheader">Use Capsules AI to deliver exceptional results and experiences that<br>set you apart from the competition.</div>
                 </div>
                 <div class="wrapper-btn flex-vertical">
-                    <a href="#" class="button-black w-inline-block">
+                    <a href="{{ route('book-demo') }}" class="button-black w-inline-block">
                         <div>Book a demo</div>
                     </a>
                 </div>

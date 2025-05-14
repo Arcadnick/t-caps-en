@@ -40,65 +40,6 @@
 <section id="scroll-section" class="section no-top-padding">
     <div class="container">
         {!! $content !!}
-{{--        <div class="legal-inf-block">--}}
-{{--            <div class="h3-block">--}}
-{{--                <h3>1. Introduction</h3>--}}
-{{--                <div class="text-block gap-16">--}}
-{{--                    <div class="legal-text">Cookies are small text files that are stored on your computer or mobile device when you visit a website. They are used to ensure that the website functions properly and to provide information to the owners of the site. This policy explains how and why we use cookies on the UTECH INNOVATIONS OÜ website.</div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div class="h3-block">--}}
-{{--                <h3>2. Categories of Cookies Used</h3>--}}
-{{--                <div class="text-block gap-16">--}}
-{{--                    <div class="legal-text">We use the following categories of cookies on our website:</div>--}}
-{{--                    <ul role="list" class="list-legal-block">--}}
-{{--                        <li class="list-item circles">--}}
-{{--                            <div class="legal-text"><strong>Necessary Cookies:</strong> Essential for our website&#x27;s operation, enabling core functionalities such as security, network management, and accessibility.</div>--}}
-{{--                        </li>--}}
-{{--                        <li class="list-item circles">--}}
-{{--                            <div class="legal-text"><strong>Functional Cookies:</strong> Allow our website to remember your preferences, such as language or region, to provide a more personalized online experience.</div>--}}
-{{--                        </li>--}}
-{{--                        <li class="list-item circles">--}}
-{{--                            <div class="legal-text"><strong>Analytics Cookies:</strong> Collect information about how you interact with our site, helping us improve its performance and user experience.</div>--}}
-{{--                        </li>--}}
-{{--                        <li class="list-item circles">--}}
-{{--                            <div class="legal-text"><strong>Performance Cookies:</strong> Monitor the website&#x27;s performance, providing insights into how our online services are being used and how we can improve functionality.</div>--}}
-{{--                        </li>--}}
-{{--                        <li class="list-item circles">--}}
-{{--                            <div class="legal-text"><strong>Advertisement Cookies:</strong> Used to show you ads relevant to your interests and measure the effectiveness of advertising campaigns.</div>--}}
-{{--                        </li>--}}
-{{--                        <li class="list-item circles">--}}
-{{--                            <div class="legal-text"><strong>Other Cookies:</strong> Miscellaneous cookies that might not fit into the above categories.</div>--}}
-{{--                        </li>--}}
-{{--                    </ul>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div class="h3-block">--}}
-{{--                <h3>3. Third-party Cookies</h3>--}}
-{{--                <div class="text-block gap-16">--}}
-{{--                    <div class="legal-text">We use services of third parties like Google Analytics, which set cookies on their behalf. The information from these cookies can be used by these third parties in accordance with their own privacy policies.</div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div class="h3-block">--}}
-{{--                <h3>4. Managing and Deleting Cookies</h3>--}}
-{{--                <div class="text-block gap-16">--}}
-{{--                    <div class="legal-text">You can manage cookies through your browser settings. Here, you can choose to block or delete cookies, but note that doing so might negatively affect the functionality of our website.</div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div class="h3-block">--}}
-{{--                <h3>5. Changes to this Cookie Policy</h3>--}}
-{{--                <div class="text-block gap-16">--}}
-{{--                    <div class="legal-text">We may revise this cookie policy from time to time. Any changes will be updated on this page, so please revisit this policy regularly.</div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div class="h3-block">--}}
-{{--                <h3>6. Contact</h3>--}}
-{{--                <div class="text-block gap-16">--}}
-{{--                    <div class="legal-text">For any questions about this cookie policy or our use of cookies, please contact us at:UTECH INNOVATIONS OÜEhitajate tee 110, 13517, Tallinn, EstoniaEmail: <a href="mailto:hello@getcapsules.ai" class="link-black">hello@getcapsules.ai</a>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
     </div>
 </section>
 <section class="footer-white">

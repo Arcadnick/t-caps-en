@@ -47,9 +47,11 @@ class RequestController extends Controller
 
             $text = "📩 Новая заявка с getcapsules.ai ({$request_type}):\n\n"
                 . "👤 Имя: {$userName}\n"
-                . "📞 Телефон: {$phone}\n"
-                . "📅 Дата: {$date}\n"
-                . "🕓 Время: {$time}";
+                . "📧 E-mail: {$email}\n"
+                . "💬 Сообщение: {$message}\n"
+                . "📞 Телефон: {$phone}\n";
+//                . "📅 Дата: {$date}\n"
+//                . "🕓 Время: {$time}";
 
             Http::post("https://api.telegram.org/bot{$token}/sendMessage", [
                 'chat_id' => $chatId,
